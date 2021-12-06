@@ -40,7 +40,10 @@ export default ({ origami: origamiData, references: origamiRef }) => (
     </p>
     <p>
       Bạn chỉ cần điền ở đơn dưới đây hoặc gửi mail đến tác giả triễn lãm qua
-      địa chỉ dat.nguyendatjet7410@hcmut.edu.vn
+      địa chỉ dat.nguyendatjet7410@hcmut.edu.vn <Arrow />
+      <a href="mailto:dat.nguyendatjet7410@hcmut.edu.vn">
+        Gửi mail đến tác giả
+      </a>
     </p>
     <p>Sau khi kiểm duyệt, tác giả sẽ đăng bài của bạn lên.</p>
 

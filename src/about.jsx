@@ -38,7 +38,10 @@ export default ({ sources: origamiSources }, filter) => (
     <ul>
       {origamiSources.map(({ name, url }) => (
         <li>
-          {name} <Arrow /> <a href={url}>{url}</a>
+          {name} <Arrow />
+          <a href={url} target="_blank">
+            {url}
+          </a>
         </li>
       ))}
     </ul>
@@ -46,7 +49,10 @@ export default ({ sources: origamiSources }, filter) => (
     <h2>Code của trang web</h2>
     <p>
       Có thể xem tại <Arrow />
-      <a href="https://github.com/datjet7410/origami-showcase/tree/gh-pages">
+      <a
+        href="https://github.com/datjet7410/origami-showcase/tree/gh-pages"
+        target="_blank"
+      >
         https://github.com/datjet7410/origami-showcase/tree/gh-pages
       </a>
     </p>
