@@ -1,5 +1,7 @@
 import BaseLayout from "./base.jsx";
 
+export const layout = "layouts/base.njk";
+
 export default ({
   id,
   title,

@@ -3,7 +3,7 @@
     "id": "orizuru",
     "title": "Chim hạc",
     "description": "",
-    "image": "/images/orizuru/i1_01.jpg",
+    "image": "/images/orizuru/i1_01.webp",
     "steps": "/images/orizuru/orizuru_steps.svg",
     "variants": [
       {
@@ -11,17 +11,24 @@
         "caption": "Hạc ngồi"
       },
       {
-        "image": "/images/orizuru/i1_03.jpg",
+        "image": "/images/orizuru/i1_03.webp",
         "caption": "Hạc tả thực"
       },
-
       {
-        "image": "/images/orizuru/05e984b14642468f1827346ea2025ed8.png",
-        "caption": "Hạc đột biến"
+        "image": "/images/orizuru/DWE5vYEVoAAEuNw.webp",
+        "caption": "Hạc tiến hóa"
       },
       {
-        "image": "/images/orizuru/DWE5vYEVoAAEuNw.jpg",
-        "caption": "Hạc tiến hóa"
+        "image": "/images/orizuru/EXFWKZTVAAE957N.webp",
+        "caption": "Trầm cảm"
+      },
+      {
+        "image": "/images/orizuru/05e984b14642468f1827346ea2025ed8.webp",
+        "caption": "Hạc đột biến ham hố học Bách Khoa"
+      },
+      {
+        "image": "/images/orizuru/83c41264ba18caae84a125b8609c534f_640px.webp",
+        "caption": "Trầm cảm tiếp"
       }
     ],
     "sources": [
@@ -54,11 +61,11 @@
     "id": "tulip",
     "title": "Hoa Tulip",
     "description": "",
-    "image": "/images/tulip/image-414.png",
+    "image": "/images/tulip/image-414.webp",
     "steps": "",
     "variants": [
       {
-        "image": "/images/tulip/image-449.png",
+        "image": "/images/tulip/image-449.webp",
         "caption": "Phiên bản tả thực hơn"
       }
     ],
@@ -68,11 +75,11 @@
     "id": "frog",
     "title": "Ếch",
     "description": "",
-    "image": "/images/frog/CIMG5932.jpg",
+    "image": "/images/frog/CIMG5932.webp",
     "steps": "",
     "variants": [
       {
-        "image": "/images/frog/DqggQLpVsAA-17W.jpg",
+        "image": "/images/frog/DqggQLpVsAA-17W.webp",
         "caption": "Phiên bản siêu thú"
       }
     ],
