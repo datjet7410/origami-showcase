@@ -3,7 +3,6 @@ import BaseLayout from "./base.jsx";
 export const layout = "layouts/base.njk";
 
 export default ({
-  id,
   title,
   image,
   description,
@@ -11,7 +10,7 @@ export default ({
   variants,
   sources,
 }) => (
-  <BaseLayout title={title}>
+  <BaseLayout title={`Mẫu ${title}`}>
     <div class="main-smaller">
       <img src={image} alt={title} />
       {!description ? (

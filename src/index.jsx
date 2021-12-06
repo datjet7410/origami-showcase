@@ -8,9 +8,9 @@ export default ({ origami: origamiData, references: origamiRef }) => (
   <>
     <h2 class="text-2xl my-4">Origami là gì</h2>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero veniam
-      sit impedit porro nsemo hic animi perspiciatis vel corrupti eligendi
-      possimus distinctio similique facilis architecto ex rem, iste ea! Omnis?I
+      Origami (tiếng Nhật: 折り紙)
+      là một loại nghệ thuật gấp giấy có xuất xứ từ Nhật Bản. Chữ origami trong
+      tiếng Nhật bắt nguồn từ hai chữ: ori là gấp hay xếp và kami là giấy.
     </p>
     <p>Không hiểu vì lý do gì, hầu hết các mẫu origami là động vật.</p>
     <h2 class="text-2xl my-4">Các mẫu origami thường gặp</h2>
@@ -21,7 +21,7 @@ export default ({ origami: origamiData, references: origamiRef }) => (
     <ul>
       {origamiRef.map(({ url, title }) => (
         <li>
-          {title} 🢣 &nbsp;
+          {title} &nbsp; 🢣 &nbsp;
           <a href={url} target="_blank">
             {url}
           </a>

@@ -16,5 +16,27 @@
   </head>
   <body>
     {{ content | safe }}
+    <script>
+      var scrollToTopBtn = document.querySelector(".totop");
+      var rootElement = document.documentElement;
+
+      function handleScroll() {
+        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+        if (rootElement.scrollTop / scrollTotal > 0.4) {
+          scrollToTopBtn.classList.add("show");
+        } else {
+          scrollToTopBtn.classList.remove("show");
+        }
+      }
+
+      function scrollToTop() {
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+      document.addEventListener("scroll", handleScroll);
+    </script>
   </body>
 </html>

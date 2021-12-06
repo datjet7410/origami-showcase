@@ -3,8 +3,8 @@ export default () => (
     <header>
       <img src="/svg/origami.svg" alt="logo" class="logo" />
       <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
+        <a href="/">Trang chủ</a>
+        <a href="/contact">Liên hệ</a>
       </nav>
     </header>
   </>

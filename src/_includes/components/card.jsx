@@ -1,6 +1,6 @@
-export default ({ id, title, description, image }) => (
+export default ({ id, title, image }) => (
   <>
-    <a href={`/origami/${id}/`}>
+    <a href={`/origami/${id}/`} title={`Mẫu ${title}`}>
       <div class="card">
         <img src={image} alt={title} />
         <p>{title}</p>
