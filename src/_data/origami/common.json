@@ -1,0 +1,84 @@
+[
+  {
+    "id": "orizuru",
+    "title": "Chim hạc",
+    "description": "",
+    "image": "/images/orizuru/i1_01.jpg",
+    "steps": "/images/orizuru/orizuru_steps.svg",
+    "variants": [
+      {
+        "image": "/images/orizuru/70-sitting-crane-min.webp",
+        "caption": "Hạc ngồi"
+      },
+      {
+        "image": "/images/orizuru/i1_03.jpg",
+        "caption": "Hạc tả thực"
+      },
+
+      {
+        "image": "/images/orizuru/05e984b14642468f1827346ea2025ed8.png",
+        "caption": "Hạc đột biến"
+      },
+      {
+        "image": "/images/orizuru/DWE5vYEVoAAEuNw.jpg",
+        "caption": "Hạc tiến hóa"
+      }
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Orizuru",
+      "https://support.epson.net/fun/articles/128?LG2=JA&OSC=WS&MKN&PINF=fcont_128",
+      "https://origami.me/beginners-guide/",
+      "https://maidonanews.jp/article/14211664",
+      "https://nlab.itmedia.co.jp/nl/articles/1802/18/news034.html"
+    ]
+  },
+  {
+    "id": "dolphin",
+    "title": "Cá heo",
+    "description": "",
+    "image": "/images/dolphin/51-dolphin-min.webp",
+    "steps": "",
+    "variants": [],
+    "sources": ["https://origami.me/beginners-guide/"]
+  },
+  {
+    "id": "seal",
+    "title": "Hải cẩu",
+    "description": "",
+    "image": "/images/seal/45-seal-min.webp",
+    "steps": "",
+    "variants": [],
+    "sources": ["https://origami.me/beginners-guide/"]
+  },
+  {
+    "id": "tulip",
+    "title": "Hoa Tulip",
+    "description": "",
+    "image": "/images/tulip/image-414.png",
+    "steps": "",
+    "variants": [
+      {
+        "image": "/images/tulip/image-449.png",
+        "caption": "Phiên bản tả thực hơn"
+      }
+    ],
+    "sources": ["https://origami.onl/tulip/"]
+  },
+  {
+    "id": "frog",
+    "title": "Ếch",
+    "description": "",
+    "image": "/images/frog/CIMG5932.jpg",
+    "steps": "",
+    "variants": [
+      {
+        "image": "/images/frog/DqggQLpVsAA-17W.jpg",
+        "caption": "Phiên bản siêu thú"
+      }
+    ],
+    "sources": [
+      "https://www.art-fun.net/origami/%E9%B3%A5%E3%82%84%E6%B0%B4%E8%BE%BA%E3%81%AE%E7%94%9F%E3%81%8D%E7%89%A9/%E8%9B%99%EF%BC%88%E3%81%8B%E3%81%88%E3%82%8B%EF%BC%89/",
+      "https://twitter.com/kanokoya41/status/1056129603356377089"
+    ]
+  }
+]

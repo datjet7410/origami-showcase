@@ -1,0 +1,69 @@
+[
+  {
+    "id": "dino-skull",
+    "title": "Xương khủng long",
+    "description": "",
+    "image": "/images/dino-skull/19984473102_ec7053992f_o.jpg",
+    "steps": "",
+    "variants": [
+      {
+        "image": "/images/dino-skull/27033080339_191fdf452a_o.jpg",
+        "caption": "Logo Jurassic World ăn đứt bản gốc"
+      }
+    ],
+    "sources": [
+      "https://origami.me/dinosaur-skeletons/",
+      "https://www.flickr.com/photos/marianozavala-origami/19984473102/",
+      "https://www.flickr.com/photos/marianozavala-origami/27033080339/"
+    ]
+  },
+  {
+    "id": "griffin",
+    "title": "Griffin",
+    "description": "Griffin, tiếng Việt là Điểu sư hay Quái vật sư tử đầu chim, là một sinh vật huyền thoại với thân, đuôi và chân sau của sư tử; đầu và cánh của đại bàng và móng vuốt đại bàng ở chân trước. Vì theo truyền thống sư tử được coi là vua của các loài thú và đại bàng là vua của các loài chim, điểu sư được xem là một sinh vật đặc biệt quyền lực và cao quý. Điểu sư cũng được coi là vua của mọi loài sinh vật.",
+    "image": "/images/griffin/14016368647_866268f26b_o.jpg",
+    "steps": "",
+    "variants": [],
+    "sources": [
+      "https://origami.me/greek-mythology/",
+      "https://www.flickr.com/photos/34652734@N04/14016368647/"
+    ]
+  },
+  {
+    "id": "kirin",
+    "title": "Kirin",
+    "description": "",
+    "image": "/images/kirin/41406046400_19e2f9a5c0_o.jpg",
+    "steps": "",
+    "variants": [],
+    "sources": [
+      "https://www.flickr.com/photos/56997154@N06/41406046400/in/dateposted/"
+    ]
+  },
+  {
+    "id": "orchid",
+    "title": "Hoa lan",
+    "description": "",
+    "image": "/images/orchid/orchid-wpcf_1024x1024.jpg",
+    "steps": "",
+    "variants": [],
+    "sources": ["https://langorigami.com/artwork/orchid/"]
+  },
+  {
+    "id": "pegasus",
+    "title": "Pegasus",
+    "description": "",
+    "image": "/images/pegasus/12910679875_81657ebf89_o.jpg",
+    "steps": "",
+    "variants": [
+      {
+        "image": "/images/pegasus/origami-golden-pegasus.webp",
+        "caption": "Người chơi hệ dát vàng"
+      }
+    ],
+    "sources": [
+      "https://origami.me/greek-mythology/",
+      "https://www.flickr.com/photos/origami_vilkas/12910679875/"
+    ]
+  }
+]
