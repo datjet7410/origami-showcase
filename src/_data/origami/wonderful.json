@@ -12,9 +12,9 @@
       }
     ],
     "sources": [
-      "https://origami.me/dinosaur-skeletons/",
-      "https://www.flickr.com/photos/marianozavala-origami/19984473102/",
-      "https://www.flickr.com/photos/marianozavala-origami/27033080339/"
+      "https://origami.me/dinosaur-skeletons",
+      "https://www.flickr.com/photos/marianozavala-origami/19984473102",
+      "https://www.flickr.com/photos/marianozavala-origami/27033080339"
     ]
   },
   {
@@ -25,8 +25,8 @@
     "steps": "",
     "variants": [],
     "sources": [
-      "https://origami.me/greek-mythology/",
-      "https://www.flickr.com/photos/34652734@N04/14016368647/"
+      "https://origami.me/greek-mythology",
+      "https://www.flickr.com/photos/34652734@N04/14016368647"
     ]
   },
   {
@@ -37,7 +37,7 @@
     "steps": "",
     "variants": [],
     "sources": [
-      "https://www.flickr.com/photos/56997154@N06/41406046400/in/dateposted/"
+      "https://www.flickr.com/photos/56997154@N06/41406046400/in/dateposted"
     ]
   },
   {
@@ -47,7 +47,7 @@
     "image": "/images/orchid/orchid-wpcf_1024x1024.webp",
     "steps": "",
     "variants": [],
-    "sources": ["https://langorigami.com/artwork/orchid/"]
+    "sources": ["https://langorigami.com/artwork/orchid"]
   },
   {
     "id": "pegasus",
@@ -62,8 +62,8 @@
       }
     ],
     "sources": [
-      "https://origami.me/greek-mythology/",
-      "https://www.flickr.com/photos/origami_vilkas/12910679875/"
+      "https://origami.me/greek-mythology",
+      "https://www.flickr.com/photos/origami_vilkas/12910679875"
     ]
   }
 ]
