@@ -81,6 +81,7 @@ a:hover {
   text-decoration: underline;
 }
 header {
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -90,13 +91,23 @@ header .logo {
 }
 
 nav {
+  flex-grow: 1;
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 nav a {
   padding: 0.25rem;
-  margin: 1rem;
+  margin: 1rem 0;
+}
+@media (min-width: 1024px) {
+  nav {
+    justify-content: start;
+  }
+  nav a {
+    margin: 1rem;
+  }
 }
 main a {
   color: var(--primary-color);
