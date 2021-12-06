@@ -122,6 +122,11 @@ ul {
 ul li {
   margin: 0.5rem;
 }
+@media (min-width: 1024px) {
+  ul {
+    padding-left: 0rem;
+  }
+}
 footer {
   border-width: 1px;
   margin-top: 4rem;
