@@ -6,36 +6,30 @@
 # This workflow will install Deno then run Deno lint and test.
 # For more information see: https://github.com/denoland/setup-deno
 
-name: Deno
+name: Publish
 
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup repo
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      - name: Setup Deno
+      - name: Setup Deno environment
         uses: denoland/setup-deno@v1
         with:
-            deno-version: vx.x.x
+          deno-version: v1.x
 
-      # Uncomment this step to verify the use of 'deno fmt' on each commit.
-      # - name: Verify formatting
-      #   run: deno fmt --check
-
-      - name: Buid
+      - name: Run lume
         run: deno run -A https://deno.land/x/lume/ci.ts
         
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.7
+      - name: Deploy
+        uses: crazy-max/ghaction-github-pages@v2.0.1
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: _dist # 
+          build_dir: _site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
