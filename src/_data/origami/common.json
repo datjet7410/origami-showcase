@@ -4,7 +4,7 @@
     "title": "Chim hạc",
     "description": "",
     "image": "/images/orizuru/i1_01.webp",
-    "steps": "/images/orizuru/orizuru_steps.svg",
+    "steps": "/svg/orizuru/orizuru_steps.svg",
     "variants": [
       {
         "image": "/images/orizuru/70-sitting-crane-min.webp",
