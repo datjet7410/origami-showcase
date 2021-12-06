@@ -4,7 +4,10 @@ import jsx from "https:/deno.land/x/lume/plugins/jsx.ts";
 import svgo from "https:/deno.land/x/lume/plugins/svgo.ts";
 import postcss from "https:/deno.land/x/lume/plugins/postcss.ts";
 
-const site = lume({ src: "src" });
+const site = lume({
+  src: "src",
+  location: new URL("https://1911019.netlify.app"),
+});
 
 site.use(jsx());
 site.use(slugify_urls());

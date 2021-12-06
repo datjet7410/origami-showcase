@@ -20,7 +20,7 @@ export default ({ origami: origamiData, references: origamiRef }) => (
 
     <h2 class="text-2xl my-4">Các mẫu tuyệt đỉnh origami</h2>
     <Panel list={origamiData.wonderful} />
-    
+
     <h2>Một vài trang web tham khảo cho bạn</h2>
     <ul>
       {origamiRef.map(({ url, title }) => (
@@ -32,5 +32,23 @@ export default ({ origami: origamiData, references: origamiRef }) => (
         </li>
       ))}
     </ul>
+
+    <h2>Trưng bày mẫu của bạn</h2>
+    <p>
+      Bạn có thể đăng mẫu origami mà bạn gấp cùng một câu chuyện của riêng bạn
+      tại triễn lãm này.
+    </p>
+    <p>
+      Bạn chỉ cần điền ở đơn dưới đây hoặc gửi mail đến tác giả triễn lãm qua
+      địa chỉ dat.nguyendatjet7410@hcmut.edu.vn
+    </p>
+    <p>Sau khi kiểm duyệt, tác giả sẽ đăng bài của bạn lên.</p>
+
+    <h2 id="register">Đơn đăng kí trưng bày</h2>
+    <form>
+      <p>
+        <em>Xin lỗi, tính năng này đang được cập nhật</em>
+      </p>
+    </form>
   </>
 );
