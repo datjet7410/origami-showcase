@@ -46,7 +46,11 @@ export default () => (
           placeholder="Viết gì đó giới thiệu về tác phẩm"
         />
       </p>
-      <div data-netlify-recaptcha="true" />
+      
+      <div class="captcha">
+        <div data-netlify-recaptcha="true" />
+      </div>
+
       <p>
         <button type="submit">Nhấn để Gửi</button>
       </p>
