@@ -1,5 +1,6 @@
 import Panel from "./_includes/components/panel.jsx";
 import Arrow from "./_includes/components/arrow.jsx";
+import Register from "./_includes/components/register.jsx";
 
 export const layout = "layouts/base.jsx";
 
@@ -49,10 +50,6 @@ export default ({ origami: origamiData, references: origamiRef }) => (
     <p>Sau khi kiểm duyệt, tác giả sẽ đăng bài của bạn lên.</p>
 
     <h2 id="register">Đơn đăng kí trưng bày</h2>
-    <form>
-      <p>
-        <em>Xin lỗi, tính năng này đang được cập nhật</em>
-      </p>
-    </form>
+    <Register />
   </>
 );
