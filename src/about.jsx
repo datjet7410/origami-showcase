@@ -28,6 +28,10 @@ export default ({ sources: origamiSources }, filter) => (
 
     <h2>Lỗi có thể gặp</h2>
     <p>
+      Đơn đăng hình chỉ nhận gửi 1 ảnh dưới 1Mb <Arrow /> Trang web này sử dụng
+      dịch vụ miễn phí để chạy
+    </p>
+    <p>
       Không hiện được hình <Arrow /> Do trình duyệt của bạn quá cũ
     </p>
     <p>

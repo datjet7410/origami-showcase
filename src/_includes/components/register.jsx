@@ -1,9 +1,23 @@
 export default () => (
   <>
-    <form name="register" method="POST" data-netlify="true" id="register-form" action="/#register">
-      <p>Lưu ý: Hiện tại chỉ có thể gửi 1 ảnh</p>
+    <form
+      name="register"
+      id="register-form"
+      action="/#register"
+      method="POST"
+      data-netlify-recaptcha="true"
+      data-netlify="true"
+    >
       <p>
-        <label for="author">Tên hoặc Nghệ danh:</label>
+        <small>
+          <em>
+            Lưu ý: Đơn dưới đây chỉ nhận gửi 1 ảnh dưới 1Mb, gửi qua mail để
+            đăng nhiều hơn
+          </em>
+        </small>
+      </p>
+      <p>
+        <label for="author">Tên hoặc Nghệ danh*:</label>
         <input type="text" name="author" placeholder="anomynous" required />
       </p>
       <p>
@@ -11,12 +25,19 @@ export default () => (
         <input type="email" name="email" placeholder="anomynous@xxx.com" />
       </p>
       <p>
-        <label for="name">Tên tác phẩm:</label>
-        <input type="text" name="name" placeholder="Chim hạc" />
+        <label for="name">Tên tác phẩm*:</label>
+        <input type="text" name="name" placeholder="Chim hạc" required />
       </p>
       <p>
-        <label for="image">Ảnh:</label>
-        <input type="file" name="image" />
+        <label for="image">
+          Ảnh*: <small>(.png, .jpg, .jpeg, .webp)</small>
+        </label>
+        <input
+          type="file"
+          name="image"
+          accept=".png, .jpg, .jpeg, .webp"
+          required
+        />
       </p>
       <p>
         <label for="caption">Giới thiệu:</label>
@@ -25,8 +46,10 @@ export default () => (
           placeholder="Viết gì đó giới thiệu về tác phẩm"
         />
       </p>
+
       <p>
-        <button type="submit">Gửi</button>
+        <div data-netlify-recaptcha="true"></div>
+        <button type="submit">Nhấn để Gửi</button>
       </p>
     </form>
   </>

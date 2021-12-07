@@ -279,6 +279,7 @@ button[type="submit"] {
   color: white;
   padding: 0.5rem 1rem;
   transition: all 0.5ms linear;
+  margin: auto;
 }
 button[type="submit"]:hover {
   background-color: var(--active-color);
