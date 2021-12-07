@@ -261,7 +261,7 @@ form input {
 @media (min-width: 640px) {
   form input {
     width: 65%;
-    margin: 0.5rem 0 0.5rem 1rem;
+    margin: 0 0 0 1rem;
   }
 }
 form textarea {
