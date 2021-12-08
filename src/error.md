@@ -1,6 +1,7 @@
 ---
 title: Đã có lỗi xảy ra 🥲🥲🥲
 layout: layouts/base.jsx
+url: /error/
 ---
 
 Chúng tôi rất tiếc, vui lòng

@@ -10,8 +10,8 @@ export default () => (
       <p>
         <small>
           <em>
-            Lưu ý: Đơn dưới đây chỉ nhận gửi 1 ảnh dưới 1Mb, gửi qua mail để
-            đăng nhiều hơn
+            Lưu ý: Đơn dưới đây chỉ nhận gửi 1 ảnh, gửi qua mail để đăng nhiều
+            hơn
           </em>
         </small>
       </p>
