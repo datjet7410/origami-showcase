@@ -1,4 +1,3 @@
-require("dotenv").config();
 const { SUPABASE_URL, SUPABASE_KEY } = process.env;
 
 const { createClient } = require("@supabase/supabase-js");
@@ -39,21 +38,26 @@ function parseMultipartForm(event) {
   });
 }
 
+function uploadDataToSupabase(formFields) {
+  let { image, ...fields } = formFields;
+  const { data, error } = await supabase
+    .from("origami-register")
+    .insert([fields]);
+  console.log(data, error);
+
+  const { data, error } = await supabase.storage
+    .from("origami-register")
+    .upload(image.filename, image.content);
+  console.log(data, error);
+}
+
 exports.handler = async function (event, context) {
   switch (event.httpMethod) {
     case "POST": {
-      const { image, ...fields } = await parseMultipartForm(event);
+      const formFields = await parseMultipartForm(event);
       const redirectUrl = "/thanks";
 
-      const { data: fieldsData, error: fieldsError } = await supabase
-        .from("origami-register")
-        .insert([fields]);
-      console.log(fieldsData, fieldsError);
-
-      const { data: fileData, error: imageError } = await supabase.storage
-        .from("origami-register")
-        .upload(image.filename, image.content);
-      console.log(fileData, imageError);
+      await uploadDataToSupabase(formFields);
 
       return {
         statusCode: 200,
