@@ -5,6 +5,7 @@ export default () => (
       id="register-form"
       action="https://datjet7410-form-backend.vercel.app/api/register"
       method="POST"
+      enctype="multipart/form-data"
     >
       <p>
         <small>
