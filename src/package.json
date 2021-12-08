@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^1.28.5",
+    "busboy": "^0.3.1"
+  }
+}

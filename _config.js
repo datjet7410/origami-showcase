@@ -15,4 +15,5 @@ site.use(svgo());
 site.use(postcss());
 site.copy("images");
 site.copy("netlify");
+site.copy("package.json");
 export default site;
