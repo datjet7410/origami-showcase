@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { SUPABASE_URL, SUPABASE_KEY } = process.env;
 
 const { createClient } = require("@supabase/supabase-js");
@@ -41,21 +42,22 @@ function parseMultipartForm(event) {
 exports.handler = async function (event, context) {
   switch (event.httpMethod) {
     case "POST": {
-      const { image, ...fields } = await parseMultipartForm(event);
+      let { image, ...fields } = await parseMultipartForm(event);
       // const redirectUrl = "/thanks";
 
-      const { data: fieldsData, fieldsError } = await supabase
+      let { data: fieldsData, fieldsError } = await supabase
         .from("origami-register")
         .insert([fields]);
       console.log(fieldsData, fieldsError);
 
-      const { data: imageData, error: imageError } = await supabase.storage
+      let { data: imageData, error: imageError } = await supabase.storage
         .from("origami-register")
         .upload(image.filename, image.content);
       console.log(imageData, imageError);
 
       return {
         statusCode: 200,
+        headers: { "content-type": "application/json" },
         body: JSON.stringify({ message: "Đăng bài thành công" }),
       };
     }
