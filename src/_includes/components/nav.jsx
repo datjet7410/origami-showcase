@@ -6,6 +6,7 @@ export default () => (
         <a href="/">Trang chủ</a>
         <a href="/about">Giới thiệu</a>
         <a href="/contact">Liên hệ</a>
+        <a href="/#register">Đăng kí trưng bày</a>
       </nav>
     </header>
   </>

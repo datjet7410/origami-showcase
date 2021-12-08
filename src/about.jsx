@@ -6,8 +6,8 @@ export const title = "Trang thông tin về Triễn lãm origami";
 export default ({ sources: origamiSources }, filter) => (
   <>
     <p>
-      Nội dung của triễn lãm bao gồm hình ảnh sưu tầm từ Internet và truyện chế
-      của tác giả.
+      Nội dung của triễn lãm bao gồm hình ảnh sưu tầm từ Internet (đã qua nén,
+      chỉnh sửa) và truyện chế của tác giả.
     </p>
     <p>
       Bạn cũng có thể đăng mẫu origami của bạn tại link này <Arrow />
