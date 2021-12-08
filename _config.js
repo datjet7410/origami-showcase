@@ -14,6 +14,5 @@ site.use(slugify_urls());
 site.use(svgo());
 site.use(postcss());
 site.copy("images");
-site.copy("netlify");
 
 export default site;

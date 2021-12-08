@@ -3,7 +3,7 @@ export default () => (
     <form
       name="register"
       id="register-form"
-      action="/.netlify/functions/register"
+      action="https://datjet7410-form-backend.vercel.app/api/register"
       method="POST"
       enctype="multipart/form-data"
     >
