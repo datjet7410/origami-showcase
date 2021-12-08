@@ -1,6 +1,6 @@
-import { serve } from "https://deno.land/std@0.114.0/http/server.ts";
-import { multiParser } from "https://deno.land/x/multiparser@0.114.0/mod.ts";
-import { createClient } from "https://deno.land/x/supabase@1.1.0/mod.ts";
+import { serve } from "https://deno.land/std/http/server.ts";
+import { multiParser } from "https://deno.land/x/multiparser/mod.ts";
+import { createClient } from "https://deno.land/x/supabase/mod.ts";
 
 const SUPABASE_URL = "https://jlusiyzsrvnjsqqfaxyt.supabase.co"; //Deno.env.get("SUPABASE_URL");
 const SUPABASE_KEY =
