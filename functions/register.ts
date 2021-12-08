@@ -1,9 +1,10 @@
 import { serve } from "https://deno.land/std@0.114.0/http/server.ts";
 import { multiParser } from "https://deno.land/x/multiparser@0.114.0/mod.ts";
-import { createClient } from 'https://deno.land/x/supabase@1.1.0/mod.ts'
+import { createClient } from "https://deno.land/x/supabase@1.1.0/mod.ts";
 
-const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
-const SUPABASE_KEY = Deno.env.get("SUPABASE_KEY");
+const SUPABASE_URL = "https://jlusiyzsrvnjsqqfaxyt.supabase.co"; //Deno.env.get("SUPABASE_URL");
+const SUPABASE_KEY =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNjk2Mjc2NywiZXhwIjoxOTUyNTM4NzY3fQ.oNbi1t8oY_BwyFJVyDk2eCvyM6a-E-6mhuyeBU8Ingk"; //Deno.env.get("SUPABASE_KEY");
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
