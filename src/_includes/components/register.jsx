@@ -3,10 +3,8 @@ export default () => (
     <form
       name="register"
       id="register-form"
-      action="/#register"
+      action="/.netlify/functions/register"
       method="POST"
-      data-netlify-recaptcha="true"
-      data-netlify="true"
     >
       <p>
         <small>
@@ -46,10 +44,6 @@ export default () => (
           placeholder="Viết gì đó giới thiệu về tác phẩm"
         />
       </p>
-      
-      <div class="captcha">
-        <div data-netlify-recaptcha="true" />
-      </div>
 
       <p>
         <button type="submit">Nhấn để Gửi</button>
