@@ -56,7 +56,7 @@ exports.handler = async function (event, context) {
 
       return {
         statusCode: 200,
-        body: "Đăng bài thành công",
+        body: JSON.stringify({ message: "Đăng bài thành công" }),
       };
     }
     default:
