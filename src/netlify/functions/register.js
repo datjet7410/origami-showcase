@@ -39,25 +39,22 @@ function parseMultipartForm(event) {
   });
 }
 
-async function uploadDataToSupabase() {
-  const { data: fieldsData, error: fieldsError } = await supabase
-    .from("origami-register")
-    .insert([fields]);
-  console.log(fieldsData, fieldsError);
-
-  const { data: fileData, error: imageError } = await supabase.storage
-    .from("origami-register")
-    .upload(image.filename, image.content);
-  console.log(fileData, imageError);
-}
-
 exports.handler = async function (event, context) {
   switch (event.httpMethod) {
     case "POST": {
       const { image, ...fields } = await parseMultipartForm(event);
       const redirectUrl = "/thanks";
-      await uploadDataToSupabase();
-      
+
+      const { data: fieldsData, error: fieldsError } = await supabase
+        .from("origami-register")
+        .insert([fields]);
+      console.log(fieldsData, fieldsError);
+
+      const { data: fileData, error: imageError } = await supabase.storage
+        .from("origami-register")
+        .upload(image.filename, image.content);
+      console.log(fileData, imageError);
+
       return {
         statusCode: 200,
         headers: {
