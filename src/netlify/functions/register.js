@@ -42,8 +42,8 @@ exports.handler = async function (event, context) {
   switch (event.httpMethod) {
     case "POST": {
       const { image, ...fields } = await parseMultipartForm(event);
-      const redirectUrl = "/thanks";
-      
+      // const redirectUrl = "/thanks";
+
       const { data: fieldsData, fieldsError } = await supabase
         .from("origami-register")
         .insert([fields]);
@@ -56,18 +56,7 @@ exports.handler = async function (event, context) {
 
       return {
         statusCode: 200,
-        headers: {
-          "Content-Type": "text/html; charset=utf-8",
-        },
-        body: `
-          <!DOCTYPE html>
-          <html>
-              <head>
-              <meta http-equiv="Refresh" content="0; url='${redirectUrl}'" />
-              </head>
-              <body></body>
-          </html>
-          `,
+        body: "Đăng bài thành công",
       };
     }
     default:
