@@ -45,15 +45,15 @@ exports.handler = async function (event, context) {
       const { image, ...fields } = await parseMultipartForm(event);
       const redirectUrl = "/thanks";
 
-      const { data, error } = await supabase
+      const { data: fieldsData, error } = await supabase
         .from("origami-register")
         .insert([fields]);
-      console.log(data, error);
+      console.log(fieldsData, error);
 
-      const { data, error } = await supabase.storage
+      const { data: fileData, error } = await supabase.storage
         .from("origami-register")
         .upload(image.filename, image.content);
-      console.log(data, error);
+      console.log(fileData, error);
 
       return {
         statusCode: 200,
