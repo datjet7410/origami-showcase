@@ -1,4 +1,7 @@
-const createClient = require("@supabase/supabase-js").createClient;
+require("dotenv").config();
+const { SUPABASE_URL, SUPABASE_KEY } = process.env;
+
+const { createClient } = require("@supabase/supabase-js");
 const Busboy = require("busboy");
 
 function parseMultipartForm(event) {
@@ -34,9 +37,7 @@ function parseMultipartForm(event) {
   });
 }
 
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 exports.handler = async function (event, context) {
   switch (event.httpMethod) {
@@ -44,25 +45,30 @@ exports.handler = async function (event, context) {
       const { image, ...fields } = await parseMultipartForm(event);
       const redirectUrl = "/thanks";
 
-      await supabase
+      const { data, error } = await supabase
         .from("origami-register")
-        .insert([fields])
-        .catch((err) => {
-          redirectUrl = "/error";
-        });
-      await supabase.storage
+        .insert([fields]);
+      console.log(data, error);
+
+      const { data, error } = await supabase.storage
         .from("origami-register")
-        .upload(image.filename, image.content)
-        .catch((err) => {
-          redirectUrl = "/error";
-        });
+        .upload(image.filename, image.content);
+      console.log(data, error);
 
       return {
-        statusCode: 302,
+        statusCode: 200,
         headers: {
-          Location: redirectUrl,
-          "Cache-Control": "no-cache",
+          "Content-Type": "text/html; charset=utf-8",
         },
+        body: `
+          <!DOCTYPE html>
+          <html>
+              <head>
+              <meta http-equiv="Refresh" content="0; url='${redirectUrl}'" />
+              </head>
+              <body></body>
+          </html>
+          `,
       };
     }
     default:

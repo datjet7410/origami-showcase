@@ -5,6 +5,7 @@ export default () => (
       id="register-form"
       action="/.netlify/functions/register"
       method="POST"
+      enctype="multipart/form-data"
     >
       <p>
         <small>

@@ -34,7 +34,7 @@ export default ({ origami: origamiData, references: origamiRef }) => (
       ))}
     </ul>
 
-    <h2>Trưng bày mẫu của bạn</h2>
+    <h2 id="register">Trưng bày mẫu của bạn</h2>
     <p>
       Bạn có thể đăng mẫu origami mà bạn gấp cùng một câu chuyện của riêng bạn
       tại triễn lãm này.
@@ -49,7 +49,7 @@ export default ({ origami: origamiData, references: origamiRef }) => (
     </p>
     <p>Sau khi kiểm duyệt, tác giả sẽ đăng bài của bạn lên.</p>
 
-    <h2 id="register">Đơn đăng kí trưng bày</h2>
+    <h2>Đơn đăng kí trưng bày</h2>
     <Register />
   </>
 );
