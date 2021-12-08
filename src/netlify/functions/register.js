@@ -38,7 +38,7 @@ function parseMultipartForm(event) {
   });
 }
 
-function uploadDataToSupabase(formFields) {
+async function uploadDataToSupabase(formFields) {
   let { image, ...fields } = formFields;
   const { data, error } = await supabase
     .from("origami-register")
