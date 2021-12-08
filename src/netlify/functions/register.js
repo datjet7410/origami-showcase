@@ -4,6 +4,8 @@ const { SUPABASE_URL, SUPABASE_KEY } = process.env;
 const { createClient } = require("@supabase/supabase-js");
 const Busboy = require("busboy");
 
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+
 function parseMultipartForm(event) {
   return new Promise((resolve) => {
     const fields = {};
@@ -37,24 +39,25 @@ function parseMultipartForm(event) {
   });
 }
 
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+async function uploadDataToSupabase() {
+  const { data: fieldsData, error: fieldsError } = await supabase
+    .from("origami-register")
+    .insert([fields]);
+  console.log(fieldsData, fieldsError);
+
+  const { data: fileData, error: imageError } = await supabase.storage
+    .from("origami-register")
+    .upload(image.filename, image.content);
+  console.log(fileData, imageError);
+}
 
 exports.handler = async function (event, context) {
   switch (event.httpMethod) {
     case "POST": {
       const { image, ...fields } = await parseMultipartForm(event);
       const redirectUrl = "/thanks";
-
-      const { data: fieldsData, error } = await supabase
-        .from("origami-register")
-        .insert([fields]);
-      console.log(fieldsData, error);
-
-      const { data: fileData, error } = await supabase.storage
-        .from("origami-register")
-        .upload(image.filename, image.content);
-      console.log(fileData, error);
-
+      await uploadDataToSupabase();
+      
       return {
         statusCode: 200,
         headers: {
