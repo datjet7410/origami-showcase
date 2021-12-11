@@ -7,7 +7,6 @@ export default () => (
       method="POST"
       // enctype="multipart/form-data"
       action="/thanks"
-      method="POST"
       data-netlify-recaptcha="true"
       data-netlify="true"
     >
