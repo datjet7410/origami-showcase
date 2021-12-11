@@ -3,9 +3,13 @@ export default () => (
     <form
       name="register"
       id="register-form"
-      action="https://datjet7410-form-backend.vercel.app/api/register"
+      // action="https://datjet7410-form-backend.vercel.app/api/register"
       method="POST"
-      enctype="multipart/form-data"
+      // enctype="multipart/form-data"
+      action="/thanks"
+      method="POST"
+      data-netlify-recaptcha="true"
+      data-netlify="true"
     >
       <p>
         <small>
@@ -45,7 +49,7 @@ export default () => (
           placeholder="Viết gì đó giới thiệu về tác phẩm"
         />
       </p>
-
+      <div class="captcha"><div data-netlify-recaptcha="true"></div></div>
       <p>
         <button type="submit">Nhấn để Gửi</button>
       </p>
