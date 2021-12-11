@@ -1,0 +1,1 @@
+let e=document.querySelector(".totop"),t=document.documentElement;e.addEventListener("click",(function(){t.scrollTo({top:0,behavior:"smooth"})})),document.addEventListener("scroll",(function(){let o=t.scrollHeight-t.clientHeight;t.scrollTop/o>.2?e.classList.add("show"):e.classList.remove("show")}));

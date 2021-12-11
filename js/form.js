@@ -1,0 +1,1 @@
+document.getElementById("register-form").addEventListener("keypress",(function(e){"Enter"==e.code&&e.preventDefault()}));
